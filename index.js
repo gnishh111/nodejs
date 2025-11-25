@@ -26,7 +26,7 @@ User.init().catch((err) => console.error("User.init() error:", err));
 // routes
 app.use("/api/v1/Authenticate", authRoutes);
 
-// start server
+// start API server
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || "0.0.0.0"; // or use specific IP like "192.168.1.50"
 app.listen(PORT, HOST, () => console.log(`Server running on http://${HOST}:${PORT}`));
